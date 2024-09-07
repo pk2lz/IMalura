@@ -21,7 +21,7 @@ function pesquisar() {
       titulo.includes(campoPesquisa) ||
       descricao.includes(campoPesquisa)
     ) {
-      resultados += `
+      resultados = `
       <div class="item-resultado">
                 <h2>
                   <a
