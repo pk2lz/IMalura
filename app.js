@@ -3,17 +3,16 @@ function pesquisar() {
 
   let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
-  if (campoPesquisa == "") {
-    section.innerHTML = "<h2> Nada foi encontrado </P>";
+  if (!campoPesquisa) {
+    section.innerHTML = "<h2> Nada foi encontrado </h2>";
     return;
   }
-
+  
   campoPesquisa = campoPesquisa.toLowerCase();
 
   let = resultados = "";
   let titulo = "";
   let descricao = "";
-  let tags = "";
 
   for (let dado of dados) {
     titulo = dado.titulo.toLowerCase()
@@ -33,14 +32,14 @@ function pesquisar() {
                 </h2>
                 <p class="descricao-meta">
                 ${dado.descricao}
-                
                 </p>
               </div>
       `;
     }
-if (!resultados){
-resultados = "<h2>Nenhum campeão encontrado</h2>"
-}
+
+    if (!resultados) {
+      resultados = "<h2>Nenhum campeão encontrado</h2>"
+  }
 
     section.innerHTML = resultados;
   }

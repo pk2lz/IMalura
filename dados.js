@@ -5,6 +5,7 @@ let dados = [
       "Forjado nas ruas cruéis de Noxus, ele sobreviveu graças à sua astúcia e à lâmina afiada. Adotado pela influente família Du Couteau, Talon agora serve ao império, eliminando ameaças com precisão e eficiência.",
     link: "https://www.leagueoflegends.com/pt-br/champions/talon/",
     builds: "https://www.mobafire.com/league-of-legends/champion/talon-82",
+    splash: "https://i.pinimg.com/736x/1e/5a/0b/1e5a0b16186da0f4879ff2acb01f9c4a.jpg",
   },
 
   {
@@ -22,4 +23,11 @@ let dados = [
     link: "https://www.leagueoflegends.com/pt-br/champions/sion/",
     builds: "https://www.mobafire.com/league-of-legends/champion/sion-6",
   },
+  
+  {
+    titulo: "Swain",
+    descricao: "O Grande General Swain é um líder carismático e estrategista brilhante. Após perder um braço em batalha, ele foi modificado com tecnologia mágica, tornando-se um híbrido entre homem e máquina.",
+    link: "https://www.leagueoflegends.com/pt-br/champions/swain/",
+    builds: "https://www.mobafire.com/league-of-legends/champion/sion-6",
+}
 ];
