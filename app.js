@@ -1,6 +1,28 @@
 function pesquisar() {
-    for (let dado of dados) {
-        resultados += `
+  let section = document.getElementById("resultados-pesquisa");
+
+  let campoPesquisa = document.getElementById("campo-pesquisa").value;
+
+  if (campoPesquisa == "") {
+    section.innerHTML = "<h2> Nada foi encontrado </P>";
+    return;
+  }
+
+  campoPesquisa = campoPesquisa.toLowerCase();
+
+  let = resultados = "";
+  let titulo = "";
+  let descricao = "";
+  let tags = "";
+
+  for (let dado of dados) {
+    titulo = dado.titulo.toLowerCase()
+    titulo = dado.descricao.toLowerCase()
+    if (
+      titulo.includes(campoPesquisa) ||
+      descricao.includes(campoPesquisa)
+    ) {
+      resultados += `
       <div class="item-resultado">
                 <h2>
                   <a
@@ -15,17 +37,11 @@ function pesquisar() {
                 </p>
               </div>
       `;
-      }
-      
-      section.innerHTML = resultados
+    }
+if (!resultados){
+resultados = "<h2>Nenhum campeão encontrado</h2>"
 }
 
-// console.log (dados);
-
-let section = document.getElementById("resultados-pesquisa");
-console.log(section);
-
-let resultados = ""
-
-// para cada dentro da lista de dados
-
+    section.innerHTML = resultados;
+  }
+}
